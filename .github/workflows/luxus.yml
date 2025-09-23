@@ -5,12 +5,10 @@ name: First
 
 on:
   push:
-    branches: [ "develop" ]
-  pull_request:
-    branches: [ "develop" ]
-
+    branches: 
+      -develop
 jobs:
-  build:
+ build:
 
     runs-on: windows-latest
 
