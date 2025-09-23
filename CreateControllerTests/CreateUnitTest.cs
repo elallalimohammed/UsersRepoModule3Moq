@@ -10,7 +10,7 @@ namespace CreateControllerTests;
 public class CreateUnitTest
 {
   
-   /// <returns></returns>
+   
     [TestMethod]
     public async Task Create_ReturnsCreatedAtAction_WhenModelIsValid()
     {
