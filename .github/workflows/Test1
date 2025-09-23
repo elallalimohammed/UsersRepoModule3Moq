@@ -3,22 +3,14 @@
 
 
 name: .NET
-
-
 on:
   push:
-    branches: [ "develop" ]
+    branches: [develop]
   pull_request:
-    branches: [ "develop" ]
-
-
+    branches: [develop]
 jobs:
   build:
-
-
     runs-on: windows-latest
-
-
     steps:
     - uses: actions/checkout@v4
     - name: Setup .NET
