@@ -10,7 +10,7 @@ public class CreateUnitTest
             // Arrange
             var mockRepo = new Mock<IUserRepository>();
             var controller = new UsersController(mockRepo.Object);
-            var newUser = new NewUserModel { Username = "Charlie", Email = "charlie@test.com" };
+            var newUser = new User { Username = "Charlie", Email = "charlie@test.com" };
 
             mockRepo.Setup(r => r.AddAsync(It.IsAny<User>()))
                 .Returns(Task.CompletedTask)
