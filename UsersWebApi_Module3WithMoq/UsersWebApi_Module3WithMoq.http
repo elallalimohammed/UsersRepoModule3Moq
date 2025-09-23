@@ -1,0 +1,6 @@
+@UsersWebApi_Module3WithMoq_HostAddress = http://localhost:5237
+
+GET {{UsersWebApi_Module3WithMoq_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
