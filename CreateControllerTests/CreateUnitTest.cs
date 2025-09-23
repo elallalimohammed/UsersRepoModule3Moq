@@ -3,8 +3,29 @@ namespace CreateControllerTests;
 [TestClass]
 public class CreateUnitTest
 {
-    [TestMethod]
-    public void TestMethod1()
-    {
-    }
+
+        [TestMethod]
+        public async Task Create_ReturnsCreatedAtAction_WhenModelIsValid()
+        {
+            // Arrange
+            var mockRepo = new Mock<IUserRepository>();
+            var controller = new UsersController(mockRepo.Object);
+            var newUser = new NewUserModel { Username = "Charlie", Email = "charlie@test.com" };
+
+            mockRepo.Setup(r => r.AddAsync(It.IsAny<User>()))
+                .Returns(Task.CompletedTask)
+                .Verifiable();
+
+            // Act
+            var result = await controller.Create(newUser);
+
+            // Assert
+            var createdAt = result.Result as CreatedAtActionResult;
+            Assert.IsNotNull(createdAt);
+            var returnValue = createdAt.Value as User;
+            Assert.IsNotNull(returnValue);
+            Assert.AreEqual("Charlie", returnValue.Username);
+
+            mockRepo.Verify();
+        }
 }
