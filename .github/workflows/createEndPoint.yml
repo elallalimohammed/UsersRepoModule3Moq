@@ -4,7 +4,7 @@
 name: CreateUserCI
 on:
   push:
-    branches: [ "createUserControllerTests" ]
+    branches: [ "feature/createUserControllerTests " ]
   pull_request:
     branches: [ "develop" ]
 
