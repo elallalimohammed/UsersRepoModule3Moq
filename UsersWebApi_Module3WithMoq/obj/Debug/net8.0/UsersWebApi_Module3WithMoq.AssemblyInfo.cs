@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UsersWebApi_Module3WithMoq")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+590aa466ec50a454b4b66d8078d68b163497b883")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+398503a079147a43b7fb9d972bd3d542ee087eaf")]
 [assembly: System.Reflection.AssemblyProductAttribute("UsersWebApi_Module3WithMoq")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UsersWebApi_Module3WithMoq")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
