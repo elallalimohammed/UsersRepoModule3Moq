@@ -16,7 +16,7 @@ public class CreateUnitTest
         // Arrange
         var mockRepo = new Mock<IUserRepository>();
         var controller = new UsersController(mockRepo.Object);
-        var newUser = new User { Username = "Charlie", Email = "charlie@test.com" };
+        var newUser = new User { Username = "Mohammed", Email = "moal@test.dk" };
 
         mockRepo.Setup(r => r.AddAsync(It.IsAny<User>()))
             .Returns(Task.CompletedTask)
