@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CreateControllerTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6c200bd40eece996a74c848998d6e28263073f9c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+590aa466ec50a454b4b66d8078d68b163497b883")]
 [assembly: System.Reflection.AssemblyProductAttribute("CreateControllerTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CreateControllerTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
