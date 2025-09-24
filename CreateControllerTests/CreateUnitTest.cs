@@ -10,11 +10,13 @@ namespace CreateControllerTests;
 public class CreateUnitTest
 {
   
-
+// comment
     [TestMethod]
     public async Task Create_ReturnsCreatedAtAction_WhenModelIsValid()
     {
+
         // Arrange //
+
         var mockRepo = new Mock<IUserRepository>();
         var controller = new UsersController(mockRepo.Object);
         var newUser = new User { Username = "Mohammed", Email = "moal@test.dk" };
